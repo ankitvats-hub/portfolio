@@ -1,0 +1,296 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ankit - Developer Portfolio</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            background-color: rgb(52, 52, 93);
+            color: white;
+            font-family: 'Poppins', sans-serif;
+            line-height: 1.6;
+        }
+
+        nav {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            height: 80px;
+            background-color: rgb(55, 33, 75);
+            padding: 0 20px;
+        }
+
+        nav ul {
+            display: flex;
+            list-style: none;
+        }
+
+        nav ul li {
+            margin: 0 20px;
+        }
+
+        nav ul li a {
+            text-decoration: none;
+            color: white;
+            font-size: 1.1rem;
+        }
+
+        nav ul li a:hover {
+            color: rgb(244, 11, 127);
+            transition: color 0.3s;
+        }
+
+        .firstsection {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin: 60px 20px;
+        }
+
+        .leftsection {
+            width: 50%;
+        }
+
+        .leftsection h1 {
+            font-size: 2.5rem;
+        }
+
+        .leftsection p {
+            font-size: 1.2rem;
+            margin: 20px 0;
+        }
+
+        .leftsection .btn-container {
+            margin-top: 20px;
+            display: flex;
+            gap: 20px;
+        }
+
+        .btn {
+            padding: 10px 20px;
+            background-color: rgb(244, 11, 127);
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background-color 0.3s;
+        }
+
+        .btn:hover {
+            background-color: rgb(214, 10, 111);
+        }
+
+        .rightsection {
+            width: 40%;
+            text-align: center;
+        }
+
+        .rightsection img {
+            max-width: 100%;
+        }
+
+        hr {
+            border: none;
+            height: 1.5px;
+            background-color: #9c97f1;
+            margin: 40px auto;
+        }
+
+        .secondsection {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 40px;
+        }
+
+        .secondsection h1 {
+            font-size: 2rem;
+            margin-bottom: 40px;
+            text-align: center;
+        }
+
+        .secondsection .box {
+            display: flex;
+            justify-content: space-between;
+        }
+
+        .secondsection .vertical {
+            width: 22%;
+            text-align: center;
+            background-color: #ffffff10;
+            padding: 20px;
+            border-radius: 10px;
+        }
+
+        .secondsection .vertical img {
+            width: 50px;
+            margin-bottom: 20px;
+        }
+
+        .secondsection .vertical-text {
+            font-size: 1.2rem;
+            margin-bottom: 10px;
+        }
+
+        .secondsection .vertical-desc {
+            font-size: 0.9rem;
+            color: lightgray;
+        }
+
+        footer {
+            background-color: #1d1d57;
+            color: white;
+            text-align: center;
+            padding: 40px 20px;
+        }
+
+        footer .footer-links {
+            margin-bottom: 20px;
+        }
+
+        footer .footer-links a {
+            margin: 0 15px;
+            color: white;
+            text-decoration: none;
+            font-size: 1.2rem;
+        }
+
+        footer .footer-links a:hover {
+            color: #f40b7f;
+        }
+
+        footer .footer-rights {
+            color: gray;
+            font-size: 0.9rem;
+        }
+
+        @media (max-width: 768px) {
+            .firstsection {
+                flex-direction: column;
+            }
+
+            .leftsection, .rightsection {
+                width: 100%;
+                text-align: center;
+            }
+
+            .btn-container {
+                flex-direction: column;
+                align-items: center;
+            }
+
+            .secondsection .box {
+                flex-direction: column;
+                align-items: center;
+            }
+
+            .secondsection .vertical {
+                width: 90%;
+                margin-bottom: 20px;
+            }
+
+            footer .footer-links {
+                flex-direction: column;
+            }
+
+            footer .footer-links a {
+                display: block;
+                margin-bottom: 10px;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <nav>
+            <div class="logo">Ankit's Portfolio</div>
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">About</a></li>
+                <li><a href="#">Projects</a></li>
+                <li><a href="#">Contact Me</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section class="firstsection">
+            <div class="leftsection">
+                <h1>Hi, I'm <span style="color: blueviolet;">Ankit</span></h1>
+                <p>And I am a <span id="element"></span></p>
+                <div class="btn-container">
+                    <button class="btn" onclick="window.location.href='ankit.pdf'">Download Resume</button>
+
+                    <button class="btn" onclick="window.location.href='https:github.com/ankitvats-hub'">Visit GitHub</button>
+                </div>
+            </div>
+            <div class="rightsection">
+                <img src="web.jpg" alt="An image representing web development">
+            </div>
+        </section>
+
+        <hr>
+
+        <section class="secondsection">
+            <h1>Work Experience</h1>
+            <div class="box">
+                <div class="vertical">
+                    <img src="html.png" alt="HTML logo">
+                    <div class="vertical-text">HTML Developer (2010-2012)</div>
+                    <div class="vertical-desc">
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin vel odio at urna facilisis blandit.
+                    </div>
+                </div>
+                <div class="vertical">
+                    <img src="css.png" alt="CSS logo">
+                    <div class="vertical-text">CSS Developer (2012-2014)</div>
+                    <div class="vertical-desc">
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin vel odio at urna facilisis blandit.
+                    </div>
+                </div>
+                <div class="vertical">
+                    <img src="js.png" alt="JavaScript logo">
+                    <div class="vertical-text">JS Developer (2014-2016)</div>
+                    <div class="vertical-desc">
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin vel odio at urna facilisis blandit.
+                    </div>
+                </div>
+                <div class="vertical">
+                    <img src="AI.png" alt="AI logo">
+                    <div class="vertical-text">AI Developer (2016-2018)</div>
+                    <div class="vertical-desc">
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin vel odio at urna facilisis blandit.
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="footer-links">
+            <a href="#">Home</a>
+            <a href="#">About</a>
+            <a href="#">Projects</a>
+            <a href="#">Contact</a>
+        </div>
+        <div class="footer-rights">
+            Copyright &#169; ankitportfolio.com | All rights reserved
+        </div>
+    </footer>
+
+    <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
+    <script>
+        var typed = new Typed('#element', {
+            strings: ['Web Developer', 'Graphic Designer', 'Video Editor'],
+            typeSpeed: 50,
+        });
+    </script>
+</body>
+</html>
