@@ -1,5 +1,5 @@
 import "../css/Hero.css";
-import profile from "../assets/profile.png";
+import profile from "../assets/Profile.png";
 import { FaGithub, FaLinkedin, FaEnvelope, FaArrowRight } from "react-icons/fa";
 import { motion } from "framer-motion";
 
